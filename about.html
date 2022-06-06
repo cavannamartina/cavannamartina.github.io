@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+    <title>Martina Cavanna</title>
+</head>
+<body>
+
+
+<div class="header">
+    <div><a href="index.html">Martina Cavanna</a></div>
+    <div><a id="menu-button" onclick="toggleContent('menu')">Menu</a></div>
+</div>
+
+
+<div class="menu-container" id="menu">
+    <div class="menu-element">
+        <a href="surviving.html">Surviving: Growing Up</a>
+        <a>Self Portrait</a>
+        <a>Borders</a>
+        <a>Wake Up Humans</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+
+
+<div class="project-container">
+    <div class="project-element">
+        <img src="images/portrait.png">
+        <div class="project-caption">
+        <div style="font-size: 1.2em;">Martina Cavanna (b.2001, Buenos Aires) is a creative photographer and videographer, based in Melbourne, Australia.</div>
+        <br><br>
+        Education:
+        <br><br>
+        (2018) Teen Photography Summer Program
+        <br>
+        NYFA, New York
+        <br><br>
+        (2019) Pre-College Summer Intensive Studies, Photography: Digital & Video
+        <br>
+        Parsons School of Design, New York
+        <br><br>
+        (2021-2023) Bachelor of Arts (Photography)
+        <br>
+        RMIT University, Australia
+        <br><br><br>
+        <div style="font-size: 1.2em; text-decoration: underline;line-height: 2;">
+        <a href="mailto:mcavanna22@gmail.com">Email</a>
+        <br>
+        <a href="https://www.instagram.com/martucavanna_/" target="_blank">Instagram</a>
+        <br>
+        <a href="https://www.youtube.com/channel/UCrt2WV9FI56G2m8IFntTkUA?view_as=subscriber" target="_blank">Youtube</a>
+        <br>
+        <a href="https://www.linkedin.com/in/martina-cavanna-13b25019b/" target="_blank">LinkedIn</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+
+    function toggleContent(id) {
+
+        var toggleButton = document.getElementById('menu-button');
+        var toggleContent = document.getElementById(id);
+
+        if (toggleContent.style.display == "flex") {
+        toggleContent.style.display = "none";
+        toggleButton.innerHTML = "Menu";
+        toggleButton.style.color = "black";
+        } else {
+        toggleContent.style.display = "flex";
+        toggleButton.innerHTML = "Close";
+        toggleButton.style.color = "grey";
+    }
+    }
+    
+</script>
+
+</html>

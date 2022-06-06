@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+    <title>Martina Cavanna</title>
+</head>
+<body>
+
+
+<div class="header">
+    <div><a href="index.html">Martina Cavanna<br>Photography & Videography</a></div>
+    <div><a id="menu-button" onclick="toggleContent('menu')">Menu</a></div>
+</div>
+
+
+<div class="home-img"> 
+</div>
+
+
+<div class="menu-container" id="menu">
+    <div class="menu-element">
+        <a href="surviving.html">Surviving: Growing Up</a>
+        <a>Self Portrait</a>
+        <a>Borders</a>
+        <a>Wake Up Humans</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+
+    function toggleContent(id) {
+
+        var toggleButton = document.getElementById('menu-button');
+        var toggleContent = document.getElementById(id);
+
+        if (toggleContent.style.display == "flex") {
+        toggleContent.style.display = "none";
+        toggleButton.innerHTML = "Menu";
+        toggleButton.style.color = "black";
+        } else {
+        toggleContent.style.display = "flex";
+        toggleButton.innerHTML = "Close";
+        toggleButton.style.color = "grey";
+    }
+    }
+    
+</script>
+
+</html>
