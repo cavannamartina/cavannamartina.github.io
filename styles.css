@@ -60,13 +60,18 @@ a:hover {
     
 }
 
-/* HOME PAGE IMAGE */
+/* HOME PAGE */
 
 .home-img {
     height:100vh;
     width:100vw;
     background-image: url("images/desert.png");
     background-size: cover;
+}
+
+.footer {
+    padding:1em;
+    font-size: 0.8em;
 }
 
 /* PROJECTS */
